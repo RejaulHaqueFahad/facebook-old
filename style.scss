@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.header{
+    background: linear-gradient(#4D68A1, #3B5998);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    &__logo-content{
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    &__logo{
+        cursor: pointer;
+    }
+
+    &__form{
+        display: flex;
+        width: 35%;
+    }
+
+    &__form-wrap{
+        display: inline-block;
+        width: 160px;
+        align-items: center;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    &__input-email{
+        padding: 3px;
+        margin-top: 4px;
+    }
+
+    &__text-email{
+        cursor: pointer;
+    }
+
+    &__text-password{
+        cursor: pointer;
+    }
+
+    &__input-password{
+        padding: 3px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+
+    &__link{
+        color: #9cb4d8;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    &__button{
+        padding: 5px 2px;
+        margin-top: 18px;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #4267b2;
+        color: #fff;
+        border:1px solid #29487d;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #365899;
+        }
+    }
+}
+
+.body{
+    background: linear-gradient(#FFFFFF, #D4D9E8);
+
+    &__container{
+        max-width: 88%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 70px;
+    }
+
+    &__content-wrap{
+        width: 60%;
+        margin-top: 10px;
+        font-size: 25px;
+        color: #1d2129;
+        font-weight: bold;
+    }
+
+    &__content-photo{
+        margin-top: 35px;
+        width: 650px;
+    }
+
+    &__reg-wrap{
+        width: 40%;
+    }
+
+    &__text{
+        font-size: 36px;
+        color: #1d2129;
+        font-weight: bold;
+    }
+
+    &__text1{
+        font-size: 19px;
+        color: #1d2129;
+        margin-bottom: 10px;
+    }
+
+    &__reg-name{
+        width: 335px;
+        border: 1px solid #bdc7d8;
+        padding: 8px 10px;
+        font-size: 18px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-sizing: border-box;   
+    }
+
+    &__reg-info{
+        width: 100%;
+        display: block;
+        border: 1px solid #bdc7d8;
+        padding: 8px 10px;
+        font-size: 18px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+    }
+
+    &__birthday{
+        font-size: 18px;
+        font-weight: normal;
+        color: #1d2129;
+        margin-bottom: 5px;
+    }
+    
+    &__birthday-input{
+        padding: 5px;
+        font-size: 13px;
+        border: 1px solid #bdc7d8;
+    }
+
+    &__text2{
+        margin-left: 10px;
+        font-size: 11px;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__gender{
+        margin-top: 20px;
+    }
+
+    &__gen-text{
+        font-size: 18px;
+        color: #1d2129;
+        margin-right: 20px;
+    }
+
+    &__text3{
+        font-size: 11px;
+        color: #777;
+        margin-top: 18px;
+    }
+
+    &__a-tag{
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__button{
+        margin: 15px 0;
+        background: linear-gradient(#67ae55, #578843);
+        color: #fff;
+        font-size: 19px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #3b6e22 #3b6e22 #2c5115;
+        box-shadow: inset 0 1px 1px #a4e388;
+        border-radius: 5px;
+        text-shadow: 0 1px 2px rgba(0,0,0,.5);
+        padding: 7px 20px;
+        cursor: pointer;
+    }
+
+    &__text4{
+        font-size: 13px;
+        color: #666;
+        font-weight: bold;
+    }
+
+    &__a-create{
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}   
