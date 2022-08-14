@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
+    
 }
 
 
@@ -18,11 +18,11 @@
         justify-content: space-between;
         width: 90%;
         margin: auto;
+        overflow: hidden;
     }
 
     &__logo-content{
         margin-top: 15px;
-        width: 80%;
     }
 
     &__logo{
@@ -31,12 +31,14 @@
 
     &__form{
         display: flex;
-        width: 35%;
+        margin-right: 27px;
+        max-width: 440px;
+        width: 40%;
     }
 
     &__form-wrap{
         display: inline-block;
-        width: 160px;
+        width: 190px;
         align-items: center;
         color: #fff;
         font-size: 12px;
@@ -46,13 +48,12 @@
     &__input-email{
         padding: 3px;
         margin-top: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
     }
 
     &__text-email{
-        cursor: pointer;
-    }
-
-    &__text-password{
         cursor: pointer;
     }
 
@@ -60,16 +61,34 @@
         padding: 3px;
         margin-top: 4px;
         margin-bottom: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    &__text-password{
+        cursor: pointer;
     }
 
     &__link{
         color: #9cb4d8;
         font-size: 12px;
         text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__button-content{
+        max-width: 50px;
+        width: 100%;
+        box-sizing: border-box;
+
     }
 
     &__button{
-        padding: 5px 2px;
+        padding: 5px 4px;
         margin-top: 18px;
         font-size: 12px;
         font-weight: bold;
@@ -88,7 +107,7 @@
     background: linear-gradient(#FFFFFF, #D4D9E8);
 
     &__container{
-        max-width: 88%;
+        max-width: 90%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -96,7 +115,7 @@
     }
 
     &__content-wrap{
-        width: 60%;
+        width: 50%;
         margin-top: 10px;
         font-size: 25px;
         color: #1d2129;
@@ -105,17 +124,21 @@
 
     &__content-photo{
         margin-top: 35px;
-        width: 650px;
+        width: 100%;
+        max-width: 700px;
     }
 
     &__reg-wrap{
         width: 40%;
+        max-width: 580px;
+        margin-right: 30px;
     }
 
     &__text{
         font-size: 36px;
         color: #1d2129;
         font-weight: bold;
+        margin-bottom: 4px;
     }
 
     &__text1{
@@ -124,15 +147,33 @@
         margin-bottom: 10px;
     }
 
-    &__reg-name{
-        width: 335px;
+    &__reg-full-name{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__reg-fname{
+        width: 49%;
         border: 1px solid #bdc7d8;
         padding: 8px 10px;
         font-size: 18px;
         margin-bottom: 7px;
         border-radius: 5px;
         overflow: hidden;
-        box-sizing: border-box;   
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    &__reg-sname{
+        width: 49%;
+        border: 1px solid #bdc7d8;
+        padding: 8px 10px;
+        font-size: 18px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-sizing: border-box;
+        outline: none;
     }
 
     &__reg-info{
@@ -143,6 +184,8 @@
         font-size: 18px;
         margin-bottom: 7px;
         border-radius: 5px;
+        box-sizing: border-box;
+        outline: none;
     }
 
     &__birthday{
@@ -158,8 +201,15 @@
         border: 1px solid #bdc7d8;
     }
 
+    &__birthday-all-input{
+        display: flex;
+    }
+
+    &__text-why{
+        margin: 5px 10px;
+    }
+
     &__text2{
-        margin-left: 10px;
         font-size: 11px;
         text-decoration: none;
 
@@ -179,7 +229,7 @@
     }
 
     &__text3{
-        font-size: 11px;
+        font-size: 12px;
         color: #777;
         margin-top: 18px;
     }
@@ -205,6 +255,10 @@
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
         padding: 7px 20px;
         cursor: pointer;
+
+        &:hover{
+            background: linear-gradient(#79bc64, #578843);
+        }
     }
 
     &__text4{
