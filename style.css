@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header {
@@ -17,21 +16,23 @@
   justify-content: space-between;
   width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 .header__logo-content {
   margin-top: 15px;
-  width: 80%;
 }
 .header__logo {
   cursor: pointer;
 }
 .header__form {
   display: flex;
-  width: 35%;
+  margin-right: 27px;
+  max-width: 440px;
+  width: 40%;
 }
 .header__form-wrap {
   display: inline-block;
-  width: 160px;
+  width: 190px;
   align-items: center;
   color: #fff;
   font-size: 12px;
@@ -40,25 +41,39 @@
 .header__input-email {
   padding: 3px;
   margin-top: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
 }
 .header__text-email {
-  cursor: pointer;
-}
-.header__text-password {
   cursor: pointer;
 }
 .header__input-password {
   padding: 3px;
   margin-top: 4px;
   margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+.header__text-password {
+  cursor: pointer;
 }
 .header__link {
   color: #9cb4d8;
   font-size: 12px;
   text-decoration: none;
 }
+.header__link:hover {
+  text-decoration: underline;
+}
+.header__button-content {
+  max-width: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
 .header__button {
-  padding: 5px 2px;
+  padding: 5px 4px;
   margin-top: 18px;
   font-size: 12px;
   font-weight: bold;
@@ -75,14 +90,14 @@
   background: linear-gradient(#FFFFFF, #D4D9E8);
 }
 .body__container {
-  max-width: 88%;
+  max-width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 30px 0 70px;
 }
 .body__content-wrap {
-  width: 60%;
+  width: 50%;
   margin-top: 10px;
   font-size: 25px;
   color: #1d2129;
@@ -90,23 +105,31 @@
 }
 .body__content-photo {
   margin-top: 35px;
-  width: 650px;
+  width: 100%;
+  max-width: 700px;
 }
 .body__reg-wrap {
   width: 40%;
+  max-width: 580px;
+  margin-right: 30px;
 }
 .body__text {
   font-size: 36px;
   color: #1d2129;
   font-weight: bold;
+  margin-bottom: 4px;
 }
 .body__text1 {
   font-size: 19px;
   color: #1d2129;
   margin-bottom: 10px;
 }
-.body__reg-name {
-  width: 335px;
+.body__reg-full-name {
+  display: flex;
+  justify-content: space-between;
+}
+.body__reg-fname {
+  width: 49%;
   border: 1px solid #bdc7d8;
   padding: 8px 10px;
   font-size: 18px;
@@ -114,6 +137,18 @@
   border-radius: 5px;
   overflow: hidden;
   box-sizing: border-box;
+  outline: none;
+}
+.body__reg-sname {
+  width: 49%;
+  border: 1px solid #bdc7d8;
+  padding: 8px 10px;
+  font-size: 18px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  outline: none;
 }
 .body__reg-info {
   width: 100%;
@@ -123,6 +158,8 @@
   font-size: 18px;
   margin-bottom: 7px;
   border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
 }
 .body__birthday {
   font-size: 18px;
@@ -135,8 +172,13 @@
   font-size: 13px;
   border: 1px solid #bdc7d8;
 }
+.body__birthday-all-input {
+  display: flex;
+}
+.body__text-why {
+  margin: 5px 10px;
+}
 .body__text2 {
-  margin-left: 10px;
   font-size: 11px;
   text-decoration: none;
 }
@@ -152,7 +194,7 @@
   margin-right: 20px;
 }
 .body__text3 {
-  font-size: 11px;
+  font-size: 12px;
   color: #777;
   margin-top: 18px;
 }
@@ -175,6 +217,9 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   padding: 7px 20px;
   cursor: pointer;
+}
+.body__button:hover {
+  background: linear-gradient(#79bc64, #578843);
 }
 .body__text4 {
   font-size: 13px;
